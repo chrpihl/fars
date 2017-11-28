@@ -1,0 +1,44 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# fars
+
+The FARS data analyzer package contains functions for exploring data from the US National Highway Traffic Safety Administration's "Fatality Analysis Reporting System". The package includes data from the years 2013, 2014 and 2015, but data from other years can also be imported using the package as long as the data format stays the same.
+
+## Example
+
+```{r echo=FALSE, results='hide'}
+# Make extdata available for vignette creation
+extdata_folder <- "./inst/extdata"
+files <- list.files(extdata_folder, full.names = TRUE)
+file.copy(from = files, to=".")
+```
+
+The FARS data for years 2013, 2014 and 2015 is included in three separate files located in the "data" subfolder of the package. Simply copy the data to the working directory to allow the functions in the package to use them.
+
+The following example shows how to use the package to get an overview of the number of observations in the FARS data for years 2014 and 2015 on a granunlarity of a month (make sure to copy the FARS data files to the working directory before running the example):
+
+```{r example summarize}
+library(fars)
+fars_summarize_years(list(2014,2015))
+```
+
+The next example shows how to use the package to plot all observations from the FARS data for a given year and a particular US State number (make sure to copy the FARS data files to the working directory before running the example). Here we choose to plot the observations for year 2014 and state number 5:
+
+```{r example plot}
+library(fars)
+fars_map_state(4, 2015)
+```
