@@ -1,5 +1,5 @@
 Package: fars
-Title: FARS data analyzer.
+Title: FARS data analyzer
 Version: 1.0.0
 Authors@R: person("Christian Pihl", "Nielsen", email = "christian.pihl.nielsen@gmail.com", role = c("aut", "cre"))
 Description: Package for exploring the data in the US National Highway Traffic Safety Administration's "Fatality Analysis Reporting System".
