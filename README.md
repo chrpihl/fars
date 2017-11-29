@@ -1,4 +1,9 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+Travis build status
+===================
+
+![Travis build status](https://travis-ci.org/chrpihl/fars.svg?branch=master)
+
 fars
 ====
 

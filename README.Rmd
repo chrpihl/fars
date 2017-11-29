@@ -14,6 +14,10 @@ knitr::opts_chunk$set(
 )
 ```
 
+# Travis build status
+![Travis build status](https://travis-ci.org/chrpihl/fars.svg?branch=master)
+
+
 # fars
 
 The FARS data analyzer package contains functions for exploring data from the US National Highway Traffic Safety Administration's "Fatality Analysis Reporting System". The package includes data from the years 2013, 2014 and 2015, but data from other years can also be imported using the package as long as the data format stays the same.
